@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-image: url(./images/Architecture_urbaine.jpeg);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    background-clip: content-box;
+    width: 100%;
+    overflow: visible;
+}
+.strong{
+    border: white solid 5px;
+    margin-top: 10%;
+    font-size: 17px;
+    list-style: none;
+}
+.span{
+  text-decoration: none;
+
+}
+.forty a{
+    margin-top: 5%;
+    text-decoration: none;
+   color: ivory;
+   font-size: 17px;
+
+}
+a:hover{
+    background-color: lightblue;
+}
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    color: lightcyan;
+    text-decoration: none;
+}
