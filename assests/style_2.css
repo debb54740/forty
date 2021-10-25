@@ -2,13 +2,16 @@
     padding: 0;
     margin: 0;
 }
+body{
+    background-color: rgb(42,48,73);
+}
 
 header{
     background-image: url(./images/Architecture_urbaine.jpeg);
     background-repeat: no-repeat;
     box-sizing: border-box;
     background-size: cover;
-    height: 500px;
+    height: auto;
     position: relative;
     background-clip: content-box;
     width: 100%;
@@ -19,9 +22,12 @@ header{
     margin-top: 10%;
     font-size: 17px;
     list-style: none;
+    text-decoration: none;
+    color: white;
 }
 .span{
   text-decoration: none;
+  color: aliceblue;
 
 }
 .forty a{
@@ -35,8 +41,97 @@ a:hover{
     background-color: lightblue;
 }
 .nav{
-    display: flex;
+    display: none;
     justify-content: flex-end;
     color: lightcyan;
     text-decoration: none;
+    
+}
+
+#hiro{
+    color: whitesmoke;
+   display: block;
+
+}
+
+#hiro h1{
+    font-size: 30px;
+    text-align: center;
+    border-bottom: whitesmoke solid 3px;
+    padding: 3%;
+    margin-top: 15%;
+}
+
+#hiro p{
+    font-size: 16px;
+    text-align: left;
+padding: 2%;
+color: rgba(255, 254, 254, 0.87);
+}
+
+img.homme{
+
+    width: 100%;
+    height: auto;
+}
+.homme:hover{
+    cursor: pointer;
+
+}
+.para_1{
+    color: seashell;
+}
+h2{
+    border-bottom: seashell solid 3px;
+    padding: 3%;
+}
+p{
+    padding: 3%;
+    font-size: 16px;
+}
+.para_2{
+    color: seashell;
+}
+ h3{
+    border-bottom: seashell solid 3px;
+    padding: 3%;
+}
+p{
+    padding: 3%;
+    font-size: 16px;
+}
+
+.para_3{
+    color: seashell;
+}
+h3{
+    border-bottom: seashell solid 3px;
+    padding: 3%;
+}
+p{
+    padding: 3%;
+    font-size: 16px;
+}
+
+.para_4{
+    color: seashell;
+}
+h3{
+    border-bottom: seashell solid 3px;
+    padding: 3%;
+}
+p{
+    padding: 3%;
+    font-size: 16px;
+}
+
+.contact{
+    display: block;
+    margin-left: 2%;
+}
+.form{
+    color: seashell;
+    margin-bottom: 2%;
+    padding-bottom: 3%;
+    display: flex;
 }

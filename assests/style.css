@@ -12,7 +12,9 @@
 	font: inherit;
 	vertical-align: baseline;
 }
-
+@media screen and (max-width:479px){
+    
+}
 header{
     
     
@@ -21,6 +23,8 @@ header{
     background-clip: content-box;
    font-size: 17px;
     width: 100%;
+   
+    
     overflow: visible;
     background: url(../assests/images/montagne.png) no-repeat center;
     background-size: cover;
@@ -90,6 +94,8 @@ div.image{
     display: block;
     overflow: visible;
     box-sizing: content-box;
+    width: 100%;
+    height: auto;
 
 }
  div.article1{
@@ -230,194 +236,145 @@ div.form{
 
 
 
-@media screen and (min-width:768px) and (max-width:1024) {
-   
-    header{
+@media screen and (min-width:480px) and (max-width:1024px)
+ {
 
-    
-        
-        width: 100%;
+    html,body{
+        max-width: 1024px;
+        min-width: 480px;
+
+    }
+
+    header{
+        width: 130%;
         display: flex;
-        
-      
-      
-       
-    }
-    .strong{
-       display: flex;
-        font-size: 17px;
-    }
-   
-    
-    .forty a{
-        display: flex;
-        margin-top: 5%;
-       
-    
-    }
-    a:hover{
-        background-color: lightblue;
-    }
-    .nav{
-        display: block;
-        
-    }
-    
-    #hero{
-        display:block;
-    }
-    
-    h1{
-        font-size: 60px;}
-        
-    
-   
-    .bout{
-        border-radius: 8px;
-        border: 2px solid white;
-        width: 250px;
-    margin-left: 3%;
-    cursor: pointer;
-    background: transparent;
-    color: white;
-    }
-    .bout:hover{
-        color: violet;
-        
+        max-width: 1024px;
+        min-width: 480px;
+        overflow-y: hidden ;
     }
     div.image{
-        display: block;
-        overflow: visible;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+       max-width: 1024px;
+       min-width: 480px;
         box-sizing: content-box;
        
     
     }
-     div.article1{
-      
-        width: 100%;
-      
-        height: 300px;
+
+
+    .content{
+        flex-direction: row-reverse;
        
+        flex-wrap: wrap;
+    }
+     div.article1{
+        box-sizing: border-box;
+        display: flex;
+        padding: 0;
+        flex-direction: row;
+        width: 500px;
+        position: relative;
+      
+      
+        
+        overflow: visible;
+        background-size: cover;
+        box-sizing: inherit;
+        
      }
     
      div.article2{
-       
-      
-        width: 100%;
-        height: 300px;
+        box-sizing: border-box;
+      position: relative;
+       margin-top: -60%;
+        display: flex;
+        margin-left: 100%;
+        width: 500px;}
+
+        .content1{
+            
+            flex-direction:row-reverse  ;
+           
+            flex-wrap: wrap;
         
-       
-    }
-    
-    div.article3{
-       
-        width: 100%;
-        height: 300px;
-      
-    }
-    
-    div.article4{
-       
-        width: 100%;
-        height: 300px;
-       
+        }
+
+        div.article3{
+           
+            box-sizing: border-box;
+            position: relative;
+             margin-top: 60%;
+              display: flex;
+              margin-left: -100%;
+              width: 500px;
+              
+        }
+
+        div.article4{
+            display: flex;
+            position: relative;
+            margin-top: -60%;
+            margin-left: -100%;
+            width: 500px;
+            
+            background-size: cover;
+            overflow: visible;
+            box-sizing: inherit;
+            float: right;
+            box-sizing: border-box;
+            
+        }
+        .content2{
+            flex-direction:row;
+            justify-content: space-around;
+            flex-wrap: wrap;
         
-    }
-    
-    div.article5{
-        
-       
-        width: 100%;
-        height: 300px;
-        
-        
-    }
-    
-    div.article6{
-       
-        
-        width: 100%;
-        height: 300px;
-      
-    }
-  
-    
-    div.image,h2{
-        font-size: 17px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-bottom: 3%;
-    border-bottom: white dotted 3px;
-    margin-top: 0%;
-    text-align: left;
-    
-    
-    
-    }
-    
-    div.image,a:hover{
-        background-color: rgba(238, 130, 238, 0.342);
-    }
-       
-        
-    
-    
-    .para,footer{
-        background-color: rgb(73, 73, 112) 
-    }
-    
-    div.para_1{
-        background-color: rgb(73, 73, 112);
-        color: white;
-        border-bottom: black solid 3px;
-    }
-    
-    div.form{
-        background-color: rgb(73, 73, 112) ;
-        text-align: left;
-        color: white;
-    }
-    
+        }
+
+        div.article5{
+
+            box-sizing: border-box;
+            position: relative;
+             top: 100%;
+              display: flex;
+              margin-left: -206%;
+              padding: 0;
+              width: 500px;
+              
+
+        }
+
+        div.article6{
+            box-sizing: border-box;
+            position: relative;
+             top: 50%;
+              display: flex;
+              left: -100%;
+              width: 500px;
+              padding: 0;
+
+        }
+
+
+
+        .para{
+           display: flex;
+           flex-direction: row;
+            margin-top: 39%;
+            padding: 0;
+        }
+        div.para_1{
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+        }
 }
 
 @media screen and (max-width:1439) {
 
-body{
-    display: flex;
-    width: auto;
-}
-
-    h1{
-        font-size: 60px;
-    }
-    main{
-        display: flex;
-        
-    }
-    .image{
-        content: "";
-        display: flex;
-        clear: both;
-    }
-    div.image{
-        float: left;
-        height: 470px;
-        width: 23%;
-        padding: 0;
-    }
-   
-
-
-        .article1{
-            background-color: blue;
-       
-                }
-.article2{
-    width: 43%;
   
-}
-.article3{
-    width: 50%;
-}
         /*.perso{
     box-sizing: border-box;
     display: inline-block;
